@@ -13,7 +13,7 @@ DialConnectTimeout = 5
 
 Use redsync to avoid cache stampade problem. This is the sample:
 ```
-rcli, err := redisc.InitCluster(&redisc.Config{
+rcli, err := redisc.New(&redisc.Config{
     Host:               "devel-redis-cluster.tkpd:6379",
     RetryCount:         100,
     RetryDuration:      1,
